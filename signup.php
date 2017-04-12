@@ -3,7 +3,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<title>ChơsinhViên | Đăng kí tài khoản</title>
+<title>Sách cũ Huế | Đăng kí tài khoản</title>
 <?php
 include('header.php');
 ?>
@@ -126,7 +126,7 @@ else
                                 <label>
 
                                     <input type="checkbox" value="no" id="" name="confirm"  data-error="Hãy đồng ý với điều khoản dịch vụ" required>
-                                    Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a> của Chơsinhvien.
+                                    Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a> của Sách cũ Huế.
                                    <div class="help-block with-errors"></div>
                                 </label>
                             </div>

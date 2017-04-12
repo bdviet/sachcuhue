@@ -4,7 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
-<title>Sách cũ Huế | Kênh rao vặt sách cũ của Sinh Viên</title>
+<title>Sách cũ Huế | Kênh rao vặt sách cũ của Sinh Viên ĐH Huế</title>
 <?php
 include('header.php');
 ?>
@@ -53,20 +53,20 @@ include('category_post.php');
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="img/banner/job.jpg" alt="">
+                                    <img class="slide-image" src="img/job.jpg" alt="Tìm kiếm sách ..">
                                     <div class="carousel-caption trickcenter">
-                                    <h3><span class ="label label-primary">Tìm kiếm việc làm thêm ..</span></h3>
-    </div>
+                                    <h3><span class ="label label-primary">Tìm kiếm sách ..</span></h3>
+                                </div>
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="img/banner/phone.jpg" alt="">
+                                    <img class="slide-image" src="img/phone.jpg" alt="Bán sách cũ ..">
                                     <div class="carousel-caption trickcenter">
-                                    <h3><span class ="label label-primary">Bán điện thoại cũ ..</span></h3></div>
+                                    <h3><span class ="label label-primary">Bán sách cũ ..</span></h3></div>
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="img/banner/room.jpg" alt="">
+                                    <img class="slide-image" src="img/room.jpg" alt="Tìm kiếm đề cương ôn tập..">
                                     <div class="carousel-caption trickcenter">
-                                    <h3><span class ="label label-primary">Tìm người ở ghép..</span></h3>
+                                    <h3><span class ="label label-primary">Tìm kiếm đề cương ôn tập..</span></h3>
                                 </div></div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Sách cũ Huế | Kênh rao vặt sách cũ của Sinh Viên</title>
+<title>Sách cũ Huế | Kênh rao vặt sách cũ của Sinh Viên ĐH Huế</title>
 <?php
 include('header.php');
 ?>
-
+<?php
+include('menu_login.php');
+?>
 <body>
 
     <!-- Navigation -->
@@ -18,7 +20,7 @@ include('header.php');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Sachcuhue.info</a>
+                <a class="navbar-brand" href="index.php">Sách cũ Huế | Kênh rao vặt sách cũ của Sinh Viên ĐH Huế</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -36,10 +38,13 @@ include('header.php');
         <div class="row">
             <div class="col-lg-12">
 			<br/><br/><br/>
-                <h1 class="page-header">Tìm hiểu về
-                    <small>Sachcuhue.info!</small>
-                </h1><p>
-              Sachcuhue.info được lập ra với mục tiêu tạo sự tiên lợi trong việc mua bán trao đổi sản phẩm giữa các bạn sinh viên  trong làng đại học.<br/>
+                <h1 class="page-header">
+                    <small>Sách cũ Huế | sachcuhue.info</small>
+                </h1>
+                <p>
+              Sách cũ Huế | sachcuhue.info: được lập ra với mục tiêu tạo sự tiên lợi trong việc mua bán trao đổi sách, tài liệu tham khảo giữa các bạn sinh viên trong làng đại học Huế.<br/>
+              Mong rằng sản phẩm sẽ nhận được sự hưởng ứng mạnh mẽ từ tất cả các bạn! <br/>
+              Việt,
 
 				</p>
             </div>
@@ -98,12 +103,15 @@ include('header.php');
 
         <!-- Footer -->
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Sachcuhue.info 2016</p>
+            <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; BĐV 2017
+                    </div>
                 </div>
-                <!-- /.col-lg-12 -->
             </div>
+        </div>
             <!-- /.row -->
         </footer>
 

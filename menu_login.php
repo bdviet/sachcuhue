@@ -37,17 +37,17 @@
       <div class="input-group">
        <span class="input-group-btn">
        
-         <select class="form-control" name="address" id="address"  style="width:150px;border-top-left-radius: 4px;border-bottom-left-radius: 4px;">
-                                      <option value="TP.Huế">TP.Huế</option>
-                                      <option value="ĐH KT">ĐH Kinh tế Huế</option>
-                                      <option value="ĐH KH">ĐH Khoa học Huế</option>
-                                      <option value="ĐH NN">ĐH Ngoại Ngữ Huế</option>
-                                      <option value="ĐH SP">ĐH Sư Phạm Huế</option>
-                                      <option value="CĐCN">CĐ Công Nghiệp Huế</option>
-                                      <option value="ĐH LUAT" >ĐH Luật Huế</option>
-                                      <option value="ĐH Y">ĐH Y dược Huế</option>
-                                      <option value="ĐH NL">ĐH Nông Lâm</option>
-                                      <option value="Phường An Cựu">Phường An Cựu</option>
+         <select class="form-control" name="address" id="address"  style="width:200px;border-top-left-radius: 4px;border-bottom-left-radius: 4px;">
+                                      <!-- <option value="TP.Huế">TP.Huế</option> -->
+                                      <option value="ĐH Kinh Te">ĐH Kinh tế Huế</option>
+                                      <option value="ĐH Khoa Hoc">ĐH Khoa học Huế</option>
+                                      <option value="ĐH Ngoai Ngu">ĐH Ngoại Ngữ Huế</option>
+                                      <option value="ĐH Su Pham">ĐH Sư Phạm Huế</option>
+                                      <option value="ĐH Luat">ĐH Luật Huế</option>
+                                      <option value="ĐH Y Duoc">ĐH Y dược Huế</option>
+                                      <option value="ĐH Nong Lam">ĐH Nông Lâm</option>
+                                      <option value="CĐ Cong Nghiep">CĐ Công Nghiệp Huế</option>
+                                      <!-- <option value="Phường An Cựu">Phường An Cựu</option>
                                       <option value="Phường An Đông">Phường An Đông</option>
                                       <option value="Phường An Hòa">Phường An Hòa</option>
                                       <option value="Phường An Tây">Phường An Tây</option>
@@ -71,7 +71,7 @@
                                       <option value="Phường Tường An">Phường Tường An</option>
                                       <option value="Phường Vỹ Dạ">Phường Vỹ Dạ</option>
                                       <option value="Phường Vĩnh Ninh">Phường Vĩnh Ninh</option>
-                                      <option value="Phường Xuân Phú">Phường Xuân Phú</option>
+                                      <option value="Phường Xuân Phú">Phường Xuân Phú</option> -->
                             </select>
         </span>
       
@@ -169,34 +169,14 @@ else
         <span class="input-group-form">
        
         <select class="form-control" name="address" id="address"  style="width:25%;border-top-left-radius: 4px;border-bottom-left-radius: 4px;">
-                                      <option value="TP.HCM">TP.HCM</option>
-                                      <option value="ĐH CNTT">ĐH Công nghệ thông tin</option>
-                                      <option value="ĐH CNTT">ĐH Công nghệ thông tin</option>
-                                      <option value="ĐH KHXHNV">ĐH Khoa học XH và NV</option>
-                                      <option value="ĐH B.Khoa">ĐH Bách Khoa</option>
-                                      <option value="ĐH KHTN">ĐH Khoa học Tự nhiên</option>
-                                      <option value="ĐH Q.Tế">ĐH Quốc tế</option>
-                                      <option value="ĐH KTLuật" >ĐH Kinh Tế Luật</option>
-                                      <option value="KHoa Y">Khoa Y</option>
-                                      <option value="Quận 1">Quận 1</option>
-                                      <option value="Quận 2">Quận 2</option>
-                                      <option value="Quận 3">Quận 3</option>
-                                      <option value="Quận 4">Quận 4</option>
-                                      <option value="Quận 5">Quận 5</option>
-                                      <option value="Quận 6">Quận 6</option>
-                                      <option value="Quận 7">Quận 7</option>
-                                      <option value="Quận 8">Quận 8</option>
-                                      <option value="Quận 9">Quận 9</option>
-                                      <option value="Quận 10">Quận 10</option>
-                                      <option value="Quận 11">Quận 11</option>
-                                      <option value="Quận 12">Quận 12</option>
-                                      <option value="Quận T.Đức">Quận Thủ Đức</option>
-                                      <option value="Quận G.Vấp">Quận Gò Vấp</option>
-                                      <option value="Quận B.Thạnh">Quận Bình Thạnh</option>
-                                      <option value="Quận T.Bình">Quận Tân Bình</option>
-                                      <option value="Quận T.Phú">Quận Tân Phú</option>
-                                      <option value="Quận P.Nhuận">Quận Phú Nhuận</option>
-                                      <option value="Quận B.Tân">Quận Bình Tân</option>
+                                      <option value="ĐH Kinh Te">ĐH Kinh tế Huế</option>
+                                      <option value="ĐH Khoa Hoc">ĐH Khoa học Huế</option>
+                                      <option value="ĐH Ngoai Ngu">ĐH Ngoại Ngữ Huế</option>
+                                      <option value="ĐH Su Pham">ĐH Sư Phạm Huế</option>
+                                      <option value="ĐH Luat">ĐH Luật Huế</option>
+                                      <option value="ĐH Y Duoc">ĐH Y dược Huế</option>
+                                      <option value="ĐH Nong Lam">ĐH Nông Lâm</option>
+                                      <option value="CĐ Cong Nghiep">CĐ Công Nghiệp Huế</option>
                             </select>
        </span>
       <input  style="width:75%" data-error="Vui lòng nhập từ khóa muốn tìm kiếm" type="text" class="form-control" name="keyword" placeholder="Bạn muốn tìm gì..."  required/>

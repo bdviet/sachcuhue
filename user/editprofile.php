@@ -3,7 +3,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<title>ChơsinhViên | Cập nhật thông tin</title>
+<title>Sách cũ Huế | Cập nhật thông tin</title>
 <?php
 include('../header.php');
 ?>

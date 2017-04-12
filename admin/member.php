@@ -4,7 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
-<title>Sách cũ Huế | Kênh rao vặt sách cũ của Sinh Viên</title>
+<title>Sách cũ Huế | Kênh rao vặt sách cũ của Sinh Viên ĐH Huế</title>
 <?php
 include('../header.php');
 ?>
