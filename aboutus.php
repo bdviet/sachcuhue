@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Sách cũ Huế | Kênh rao vặt sách cũ của Sinh Viên ĐH Huế</title>
+<script lang="javascript">(function() {var pname = ( (document.title !='')? document.title : document.querySelector('h1').innerHTML );var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async=1; ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=97ec189214b25519b472cdeb480ea939&data=eyJoYXNoIjoiNTk5MTJlNjI5N2RhYWZmMDM2NTdjMGM3YjBlYjQzMzQiLCJzc29faWQiOjQ3NTA2MjN9&pname='+pname;var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script>      
 <?php
 include('header.php');
 ?>
