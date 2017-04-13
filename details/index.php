@@ -4,11 +4,22 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
+<head>
 
 <?php
 include('../header.php');
 ?>
-
+<meta property="fb:app_id" content="348540232209471"/>
+<meta property="fb:admins" content="100003667086885"/>
+</head>
+<div id='fb-root'></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = '//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=348540232209471';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <body>
  <!------------------------- Menu bar & login -------------->
 
@@ -207,14 +218,7 @@ echo"<title>{$data['title']} ({$price} VNĐ)</title>
 
 <div class='clearfix'> </div> 
 
-<div id='fb-root'></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = '//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=1242662602443457';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class='container'  style='width:100%;'>
 
 <div class='fb-comments' data-href='http://localhost/sachcuhue/details/?id={$data['id']}' data-numposts='10' data-width='100%'>  </div></div>

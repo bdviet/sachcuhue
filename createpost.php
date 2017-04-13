@@ -140,14 +140,39 @@ include('category_post.php');
                         <div class="form-group col-md-6">
                             <label for="country">Trường ĐH</label>
                             <select class="form-control" name="address" id="address">
-                                      <option value="ĐH Kinh Te">ĐH Kinh tế Huế</option>
+                                      <!-- <option value="ĐH Kinh Te">ĐH Kinh tế Huế</option>
                                       <option value="ĐH Khoa Hoc">ĐH Khoa học Huế</option>
                                       <option value="ĐH Ngoai Ngu">ĐH Ngoại Ngữ Huế</option>
                                       <option value="ĐH Su Pham">ĐH Sư Phạm Huế</option>
                                       <option value="ĐH Luat">ĐH Luật Huế</option>
                                       <option value="ĐH Y Duoc">ĐH Y dược Huế</option>
                                       <option value="ĐH Nong Lam">ĐH Nông Lâm</option>
-                                      <option value="CĐ Cong Nghiep">CĐ Công Nghiệp Huế</option>
+                                      <option value="CĐ Cong Nghiep">CĐ Công Nghiệp Huế</option> -->
+                                      <option value="Phường An Cựu">Phường An Cựu</option>
+                                      <option value="Phường An Đông">Phường An Đông</option>
+                                      <option value="Phường An Hòa">Phường An Hòa</option>
+                                      <option value="Phường An Tây">Phường An Tây</option>
+                                      <option value="Phường Hương Long">Phường Hương Long</option>
+                                      <option value="Phường Hương Sơ">Phường Hương Sơ</option>
+                                      <option value="Phường Kim Long">Phường Kim Long</option>
+                                      <option value="Phường Phú Bình">Phường Phú Bình</option>
+                                      <option value="Phường Phú Cát">Phường Phú Cát</option>
+                                      <option value="Phường Phú Hậu">Phường Phú Hậu</option>
+                                      <option value="Phường Phú Hòa">Phường Phú Hòa</option>
+                                      <option value="Phường Phú Hội">Phường Phú Hội</option>
+                                      <option value="Phường Phú Thuận">Phường Phú Thuận</option>
+                                      <option value="Phường Phước Vĩnh">Phường Phước Vĩnh</option>
+                                      <option value="Phường Phường Đúc">Phường Phường Đúc</option>
+                                      <option value="Phường Tây Lộc">Phường Tây Lộc</option>
+                                      <option value="Phường Thuận Hòa">Phường Thuận Hòa</option>
+                                      <option value="Phường Thuận Lộc">Phường Thuận Lộc</option>
+                                      <option value="Phường Thuận Thành">Phường Thuận Thành</option>
+                                      <option value="Phường Thủy Biều">Phường Thủy Biều</option>
+                                      <option value="Phường Thủy Xuân">Phường Thủy Xuân</option>
+                                      <option value="Phường Tường An">Phường Tường An</option>
+                                      <option value="Phường Vỹ Dạ">Phường Vỹ Dạ</option>
+                                      <option value="Phường Vĩnh Ninh">Phường Vĩnh Ninh</option>
+                                      <option value="Phường Xuân Phú">Phường Xuân Phú</option>
                             </select>
                         </div>
   

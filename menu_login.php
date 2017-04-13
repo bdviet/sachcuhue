@@ -39,15 +39,15 @@
        
          <select class="form-control" name="address" id="address"  style="width:200px;border-top-left-radius: 4px;border-bottom-left-radius: 4px;">
                                       <!-- <option value="TP.Huế">TP.Huế</option> -->
-                                      <option value="ĐH Kinh Te">ĐH Kinh tế Huế</option>
+                                      <!-- <option value="ĐH Kinh Te">ĐH Kinh tế Huế</option>
                                       <option value="ĐH Khoa Hoc">ĐH Khoa học Huế</option>
                                       <option value="ĐH Ngoai Ngu">ĐH Ngoại Ngữ Huế</option>
                                       <option value="ĐH Su Pham">ĐH Sư Phạm Huế</option>
                                       <option value="ĐH Luat">ĐH Luật Huế</option>
                                       <option value="ĐH Y Duoc">ĐH Y dược Huế</option>
                                       <option value="ĐH Nong Lam">ĐH Nông Lâm</option>
-                                      <option value="CĐ Cong Nghiep">CĐ Công Nghiệp Huế</option>
-                                      <!-- <option value="Phường An Cựu">Phường An Cựu</option>
+                                      <option value="CĐ Cong Nghiep">CĐ Công Nghiệp Huế</option> -->
+                                      <option value="Phường An Cựu">Phường An Cựu</option>
                                       <option value="Phường An Đông">Phường An Đông</option>
                                       <option value="Phường An Hòa">Phường An Hòa</option>
                                       <option value="Phường An Tây">Phường An Tây</option>
@@ -71,7 +71,8 @@
                                       <option value="Phường Tường An">Phường Tường An</option>
                                       <option value="Phường Vỹ Dạ">Phường Vỹ Dạ</option>
                                       <option value="Phường Vĩnh Ninh">Phường Vĩnh Ninh</option>
-                                      <option value="Phường Xuân Phú">Phường Xuân Phú</option> -->
+                                      <option value="Phường Xuân Phú">Phường Xuân Phú</option>
+                                      
                             </select>
         </span>
       
