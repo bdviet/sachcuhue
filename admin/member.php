@@ -64,12 +64,15 @@ if (isset($_SESSION['id_member'])&&$_SESSION['id_member']=='12') //12: id của 
       <th>Họ và tên</th>
       <th>Email</th>
       <th>SĐT</th>
+      <th>Hành động</th>
 
     </tr>
   </thead>
   <tbody>
 
-
+<div class='modal-footer'>
+                                            <a style='color:#a94442' href='./signup2.php' ><button type='button' class='btn btn-danger'>Thêm người dùng</button></a>
+                                          </div>
 
           <?php
 include('../connect.php');
@@ -111,8 +114,7 @@ include('../connect.php');
  
  
  
-                $query_data = "SELECT *,id FROM member
-                               order by id desc
+                $query_data = "SELECT * FROM member ORDER BY ID asc
                                LIMIT $start, $display";
                 $result_data = mysqli_query($conn,$query_data);
 
@@ -125,10 +127,11 @@ include('../connect.php');
                 while($data = mysqli_fetch_array($result_data)) {
                   echo"<tr>
                           <th scope='row'>$stt</th>
-                          <td>{$data['id']}</td>
-                          <td><a href = '../user/?id_member={$data['id']}'>{$data['first_name']} {$data['last_name']}</a></td>
+                          <td>{$data['ID']}</td>
+                          <td><a href = '../user/?id_member={$data['ID']}'>{$data['first_name']} {$data['last_name']}</a></td>
                           <td>{$data['email']}</a></td>
                           <td>{$data['phone']}</td>
+                          <td><a href='../admin/xemtt.php?id_member={$data['ID']}'> Xem </a> ||<a href='../admin/sua.php?id_member={$data['ID']}'> Sửa </a> || <a href='../admin/delmember.php?id={$data['ID']}'> Xóa </a></td>
                         
                         </tr>
                         ";
@@ -167,23 +170,9 @@ include('../connect.php');
                 }
                  echo"</ul><div class='clearfix'></div>";
 ?>
-       
-
-
-
     </div>
      </div>
          </div> 
-
-
-       <!------------------------- END Content -------------->
-            
-      <!-- end container -->
-    
-
-  <!-- footer -->
-
-    <!-- end footer -->
 <?php
 include('../footer.php');
 ?>

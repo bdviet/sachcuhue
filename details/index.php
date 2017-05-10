@@ -71,7 +71,9 @@ include('../connect.php');
 if (!$_GET['id'])
     exit;
 $id = $_GET['id'];
-$sql = "SELECT *, id FROM postads WHERE id='$id'";
+$sql = "SELECT member.phone, postads.id, postads.user, postads.id_member, postads.title, postads.content, postads.price,postads.time,postads.user, postads.address, postads.contact, postads.category,postads.img_1,postads.img_2,postads.img_3,postads.img_4, member.id
+FROM postads, member
+where member.id = postads.id_member and postads.id ='$id'";
 $result = mysqli_query($conn, $sql);
 $data = mysqli_fetch_array($result);
 
@@ -196,6 +198,7 @@ echo"<title>{$data['title']} ({$price} VNĐ)</title>
                         Chuyên mục: <a href = '../filter/?category={$data['category']}'>{$data['category']}</a><br/>
                             Người đăng: <a href = '../user/?id_member={$data['id_member']}'>{$data['user']}</a><br/>
                             Nơi đăng: {$data['address']}<br/>
+                            Số điện thoại liên hệ:  {$data['phone']}<br/>
                             <strong>Liên hệ</strong> {$data['contact']}<br/><br/>
 
                            $content</p><br/><br/><br/>

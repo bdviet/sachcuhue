@@ -14,7 +14,7 @@
 
 
 
-    <a class="navbar-brand" href="http://localhost/sachcuhue/index.php"><span class="glyphicon glyphicon-map-marker"></span> SáchcũHuế.info</a>
+    <a class="navbar-brand" href="http://localhost/sachcuhue/index.php"><span class="glyphicon glyphicon-map-marker"></span> Sách cũ Huế</a>
   
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search">
      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
@@ -38,15 +38,14 @@
        <span class="input-group-btn">
        
          <select class="form-control" name="address" id="address"  style="width:200px;border-top-left-radius: 4px;border-bottom-left-radius: 4px;">
-                                      <!-- <option value="TP.Huế">TP.Huế</option> -->
-                                      <!-- <option value="ĐH Kinh Te">ĐH Kinh tế Huế</option>
+                                      <option value="ĐH Kinh Te">ĐH Kinh tế Huế</option>
                                       <option value="ĐH Khoa Hoc">ĐH Khoa học Huế</option>
                                       <option value="ĐH Ngoai Ngu">ĐH Ngoại Ngữ Huế</option>
                                       <option value="ĐH Su Pham">ĐH Sư Phạm Huế</option>
                                       <option value="ĐH Luat">ĐH Luật Huế</option>
                                       <option value="ĐH Y Duoc">ĐH Y dược Huế</option>
                                       <option value="ĐH Nong Lam">ĐH Nông Lâm</option>
-                                      <option value="CĐ Cong Nghiep">CĐ Công Nghiệp Huế</option> -->
+                                      <option value="CĐ Cong Nghiep">CĐ Công Nghiệp Huế</option>
                                       <option value="Phường An Cựu">Phường An Cựu</option>
                                       <option value="Phường An Đông">Phường An Đông</option>
                                       <option value="Phường An Hòa">Phường An Hòa</option>
@@ -102,9 +101,10 @@ if (!isset($_SESSION['id_member']))
 { //chưa đăng nhập
      echo "      <li class='dropdown'>
           <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'> <span class='glyphicon glyphicon-flag'></span> Tài khoản <span class='caret'></span></a>
-          <ul class='dropdown-menu'>
- <li><a href='http://localhost/sachcuhue/signup.php'><span class='glyphicon glyphicon-pencil'></span> Đăng kí</a></li>
-   <li> <a href='#' data-toggle='modal' data-target='#login-modal'> <span class='glyphicon glyphicon-user'></span> Đăng nhập</a></li>
+          <ul class='dropdown-menu'>    
+          <li> <a href='#' data-toggle='modal' data-target='#login-modal'> <span class='glyphicon glyphicon-user'></span> Đăng nhập</a></li>
+         <li><a href='http://localhost/sachcuhue/signup.php'><span class='glyphicon glyphicon-pencil'></span> Đăng kí</a></li>
+   
           </ul>
         </li>
 ";
@@ -140,7 +140,7 @@ else
             echo"<li><a href='http://localhost/sachcuhue/user/?id_member={$data['id']}''><span class='glyphicon glyphicon-comment'></span> Bài đăng của bạn</li>";
 
 
-            echo"<li><a href='http://localhost/sachcuhue/user/editprofile.php?id_member={$data['id']}''><span class='glyphicon glyphicon-pencil'></span> Cập nhật thông tin/mật khẩu</a></li>";
+            echo"<li><a href='http://localhost/sachcuhue/user/editprofile.php?id_member={$data['id']}'><span class='glyphicon glyphicon-pencil'></span> Cập nhật thông tin/mật khẩu</a></li>";
 
 
        if (($_SESSION['id_member'])==12)

@@ -12,7 +12,7 @@ if (!$email){
 
 // Kết nối database
 
-$conn = mysqli_connect('localhost', 'root', '', 'chosinhvien') or die ('{error:"bad_request"}');
+$conn = mysqli_connect('localhost', 'root', '', 'sachcuhue') or die ('{error:"bad_request"}');
 mysqli_query($conn,"SET NAMES 'UTF8'");
 // Khai báo biến lưu lỗi
 $error = array(

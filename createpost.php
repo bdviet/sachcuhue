@@ -140,14 +140,14 @@ include('category_post.php');
                         <div class="form-group col-md-6">
                             <label for="country">Trường ĐH</label>
                             <select class="form-control" name="address" id="address">
-                                      <!-- <option value="ĐH Kinh Te">ĐH Kinh tế Huế</option>
+                                      <option value="ĐH Kinh Te">ĐH Kinh tế Huế</option>
                                       <option value="ĐH Khoa Hoc">ĐH Khoa học Huế</option>
                                       <option value="ĐH Ngoai Ngu">ĐH Ngoại Ngữ Huế</option>
                                       <option value="ĐH Su Pham">ĐH Sư Phạm Huế</option>
                                       <option value="ĐH Luat">ĐH Luật Huế</option>
                                       <option value="ĐH Y Duoc">ĐH Y dược Huế</option>
                                       <option value="ĐH Nong Lam">ĐH Nông Lâm</option>
-                                      <option value="CĐ Cong Nghiep">CĐ Công Nghiệp Huế</option> -->
+                                      <option value="CĐ Cong Nghiep">CĐ Công Nghiệp Huế</option>
                                       <option value="Phường An Cựu">Phường An Cựu</option>
                                       <option value="Phường An Đông">Phường An Đông</option>
                                       <option value="Phường An Hòa">Phường An Hòa</option>
