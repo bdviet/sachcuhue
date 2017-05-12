@@ -43,9 +43,20 @@ include('menu_login.php');
                     <small>Sách cũ Huế | sachcuhue.info</small>
                 </h1>
                 <p>
-              Sách cũ Huế | sachcuhue.info: được lập ra với mục tiêu tạo sự tiên lợi trong việc mua bán trao đổi sách, tài liệu tham khảo giữa các bạn sinh viên trong làng đại học Huế.<br/>
-              Mong rằng sản phẩm sẽ nhận được sự hưởng ứng mạnh mẽ từ tất cả các bạn! <br/>
-              Việt,
+              Sách cũ Huế | sachcuhue.info: được lập ra với mục tiêu tạo sự tiên lợi trong việc mua bán trao đổi sách, tài liệu tham khảo giữa các bạn sinh viên trong làng đại học Huế.</br>
+                Sách Cũ Huế ra đời vào năm 2016 với mục đích tạo ra cho bạn một kênh rao vặt trung gian, kết nối người bán kẻ mua lại với nhau bằng những giao dịch cực kỳ đơn giản, tiện lợi, nhanh chóng, an toàn, mang đến hiệu quả bất ngờ.</br>
+                Tại Sách Cũ Huế, bạn dễ dàng mua bán, trao đổi bất cứ một loại sách báo nào, dù đó là đồ cũ hay đồ mới.</br>
+                ✓ Sách kinh tế</br>
+                ✓ Sách tin học</br>
+                ✓ Đề thi</br>
+                ✓ Tài liệu</br>
+                Và còn rất nhiều cuốn sách khác nữa…</br>
+                Không những thế, Sách Cũ Huế còn cung cấp cho bạn thông tin về giá cả các mặt hàng để bạn có thể tham khảo. Đồng thời, thông qua blog kinh nghiệm, Sách Cũ Huế sẽ tư vấn, chia sẻ cho bạn những thông tin bổ ích, bí quyết, mẹo vặt giúp bạn có những giao dịch mua bán an toàn, đảm bảo. Sách Cũ Huế cũng sẵn sàng hỗ trợ bạn trong mọi trường hợp cần thiết.</br>
+                Mỗi người trong chúng ta đều có những sách cũ đã qua sử dụng và không cần dùng tới nữa. Vậy còn chần chừ gì nữa mà không để nó trở nên giá trị hơn với người khác. Rất đơn giản, bạn chỉ cần chụp hình lại, mô tả cụ thể về sách cũ và sử dụng ứng dụng “Đăng tin miễn phí” của Sách Cũ Huế là đã có thể đến gần hơn với người cần nó.</br>
+                Chúc các bạn có những trải nghiệm mua bán tuyệt vời trên Sách Cũ Huế.</br>
+                Sách Cũ Huế – Chợ rao vặt trực tuyến số 1 của Sinh viên Thừa Thiên Huế.</br>
+                Mong rằng sách cũ sẽ nhận được sự hưởng ứng mạnh mẽ từ tất cả các bạn! </br>
+                Việt,
 
 				</p>
             </div>

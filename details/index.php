@@ -71,7 +71,7 @@ include('../connect.php');
 if (!$_GET['id'])
     exit;
 $id = $_GET['id'];
-$sql = "SELECT member.phone, postads.id, postads.user, postads.id_member, postads.title, postads.content, postads.price,postads.time,postads.user, postads.address, postads.contact, postads.category,postads.img_1,postads.img_2,postads.img_3,postads.img_4, member.id
+$sql = "SELECT member.phone, postads.id as name, postads.user, postads.id_member, postads.title, postads.content, postads.price,postads.time,postads.user, postads.address, postads.contact, postads.category,postads.img_1,postads.img_2,postads.img_3,postads.img_4, member.id
 FROM postads, member
 where member.id = postads.id_member and postads.id ='$id'";
 $result = mysqli_query($conn, $sql);
@@ -101,7 +101,7 @@ function adddotstring($strNum) {
 }
 $price=adddotstring($data['price']); 
 $content=nl2br($data['content']);
-echo"<title>{$data['title']} ({$price} VNĐ)</title>
+echo"<title>{$data['title']} ({$price} VNĐ) | Sách cũ Huê </title>
   
     <ol class = 'breadcrumb'>
    <li><a href = '../index.php'>Trang Chủ</a></li>
@@ -137,7 +137,7 @@ echo"<title>{$data['title']} ({$price} VNĐ)</title>
                                 </div>
                                 <div class='item' style='max-height: 350px;'>
                                     <img class='slide-image' src='../{$data['img_3']}' alt=''>
-                                    <div class='carousel-caption trickcenter'><h4><span class ='label label-warning'>Nới bán: {$data['address']}</span></h4></div>
+                                    <div class='carousel-caption trickcenter'><h4><span class ='label label-warning'>Nơi bán: {$data['address']}</span></h4></div>
                                 </div>
                                  <div class='item' style='max-height: 350px;'>
                                     <img class='slide-image' src='../{$data['img_4']}' alt=''>
@@ -163,31 +163,11 @@ echo"<title>{$data['title']} ({$price} VNĐ)</title>
                                 echo "";
                                   elseif ($_SESSION['id_member']==$data['id_member']||$_SESSION['id_member']=='12')
                                 echo"
-                                   <!---------- Xóa bài viết----------->
-                                         <br/><a style='color:#a94442;font-size:15px' href='#' data-toggle='modal' data-target='#myModal' > <span class='glyphicon glyphicon-remove'></span> Xóa bài viêt này</a>
-
-
-                                    <div class='modal fade' id='myModal' role='dialog'>
-                                      <div class='modal-dialog'>
-                                      
-
-                                        <div class='modal-content'>
-                                          <div class='modal-header'>
-                                            <button type='button' class='close' data-dismiss='modal'>&times;</button>
-
-                                          </div>
-                                          <div class='modal-body'>
-                                            <p>Bạn có muốn xóa bài viết này?
-                                            <br/>Bài viết sẽ không thể phục hồi sau khi xóa.</p>
-                                          </div>
-                                          <div class='modal-footer'>
-                                            <a style='color:#a94442' href='remove.php?id={$data['id']}' ><button type='button' class='btn btn-danger'>Xóa bài viết</button></a>
-                                          </div>
-                                        </div>
-                                        
-                                      </div>
-                                    </div>
-                                        <!----------------------- Xóa bài viết----------->
+                                    <!---------- Sửa - Xóa bài viết----------->
+                                   </br>
+                                         <a style='color:#a94442;font-size:15px' href='../admin/editpost.php?id={$data['name']}'> <span class='glyphicon glyphicon-edit'></span> Sửa bài viêt này</a>
+                                         <a style='color:#a94442;font-size:15px' href='remove.php?id={$data['name']}'> <span class='glyphicon glyphicon-remove'></span> Xóa bài viêt này</a>
+                                    <!----------------------- Xóa bài viết----------->
                                     ";
                  
                   echo"      </h4>
@@ -197,11 +177,11 @@ echo"<title>{$data['title']} ({$price} VNĐ)</title>
                               Ngày đăng: {$data['time']}<br/>
                         Chuyên mục: <a href = '../filter/?category={$data['category']}'>{$data['category']}</a><br/>
                             Người đăng: <a href = '../user/?id_member={$data['id_member']}'>{$data['user']}</a><br/>
-                            Nơi đăng: {$data['address']}<br/>
+                            Địa chỉ: {$data['address']}<br/>
+                            Họ tên người bán: {$data['contact']}<br/>
                             Số điện thoại liên hệ:  {$data['phone']}<br/>
-                            <strong>Liên hệ</strong> {$data['contact']}<br/><br/>
-
-                           $content</p><br/><br/><br/>
+                            Nội dung: $content</p><br/><br/><br/>
+                           
                    <div class='clearfix'></div>
                    <div class=' col-lg-9 col-md-9 col-sm-10 col-xs-12' >";
                       if($data['img_4']!='data/default-image.jpg')
