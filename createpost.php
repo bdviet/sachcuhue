@@ -62,7 +62,7 @@ include('category_post.php');
  
 <form  data-toggle="validator" role="form" method="POST" action="createpostpost.php" enctype="multipart/form-data" >
 
-                  <legend class="text-center active">  <label>Đăng Tin Rao Vặt</label></legend>
+                  <legend class="text-center active">  <label>Đăng Tin</label></legend>
 
                     <fieldset>
 
@@ -92,7 +92,7 @@ include('category_post.php');
                            <div class="form-group"> <textarea data-error="Vui lòng mô tả thêm về sản phẩm" class="form-control" id="specify" name="content" placeholder="Mô tả của bạn" required></textarea></div>
                             <div class="help-block with-errors"></div>
                         </div>
-                <div class="form-group col-md-12">
+                          <div class="form-group col-md-12">
                             <label for="">Giá</label>
                             <div class="input-group">
                             <input type="number" data-error="Vui lòng nhập giá bán sản phẩm"  class="form-control" name="price" id="" placeholder="Giá VNĐ" required><span class="input-group-addon">VNĐ</span>
@@ -109,8 +109,8 @@ include('category_post.php');
  
                         
                          <div class="form-group col-md-12">
-                            <label for="">Thông tin liên hệ</label>
-                            <input data-error="Vui lòng nhập thông tin liên hệ" type="text"  class="form-control" name="contact" id="contact" placeholder="Thông tin liên hệ" required>     
+                            <label for="">Tên người bán</label>
+                            <input data-error="Vui lòng nhập tên người bán" type="text"  class="form-control" name="contact" id="contact" placeholder="Nhập tên người bán" required>     
                              <div class="help-block with-errors"></div>
                         </div>
 
@@ -119,7 +119,7 @@ include('category_post.php');
                         <div class="form-group col-md-6">
                             <label for="country">Chuyên Mục</label>
                             <select class="form-control" name="category" id="category">
-                               
+                  <option style='display:none;'' selected>Chọn chuyên mục</option>         
                      <option>Sách kinh tế</option>
                      <option>Sách ngoại ngữ</option>
                      <option>Sách thiếu nhi</option>
@@ -138,16 +138,17 @@ include('category_post.php');
 
 
                         <div class="form-group col-md-6">
-                            <label for="country">Trường ĐH</label>
+                            <label for="country">Địa chỉ</label>
                             <select class="form-control" name="address" id="address">
-                                      <!-- <option value="ĐH Kinh Te">ĐH Kinh tế Huế</option>
-                                      <option value="ĐH Khoa Hoc">ĐH Khoa học Huế</option>
-                                      <option value="ĐH Ngoai Ngu">ĐH Ngoại Ngữ Huế</option>
-                                      <option value="ĐH Su Pham">ĐH Sư Phạm Huế</option>
-                                      <option value="ĐH Luat">ĐH Luật Huế</option>
-                                      <option value="ĐH Y Duoc">ĐH Y dược Huế</option>
-                                      <option value="ĐH Nong Lam">ĐH Nông Lâm</option>
-                                      <option value="CĐ Cong Nghiep">CĐ Công Nghiệp Huế</option> -->
+                                      <option style='display:none;'' selected>Chọn địa chỉ</option>
+                                      <option value="ĐH Kinh Tế">ĐH Kinh tế Huế</option>
+                                      <option value="ĐH Khoa Học">ĐH Khoa học Huế</option>
+                                      <option value="ĐH Ngoại Ngữ">ĐH Ngoại Ngữ Huế</option>
+                                      <option value="ĐH Sư Phạm">ĐH Sư Phạm Huế</option>
+                                      <option value="ĐH Luật">ĐH Luật Huế</option>
+                                      <option value="ĐH Y Dược">ĐH Y dược Huế</option>
+                                      <option value="ĐH Nông Lâm">ĐH Nông Lâm</option>
+                                      <option value="CĐ Công Nghiệp">CĐ Công Nghiệp Huế</option>
                                       <option value="Phường An Cựu">Phường An Cựu</option>
                                       <option value="Phường An Đông">Phường An Đông</option>
                                       <option value="Phường An Hòa">Phường An Hòa</option>

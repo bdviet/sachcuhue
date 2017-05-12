@@ -16,11 +16,11 @@
 
 <script src="http://localhost/sachcuhue/js/jquery.js"></script>
 <script src="http://localhost/sachcuhue/js/uploadimg.js"></script>
-    <script src="http://localhost/sachcuhue/js/bootstrap.min.js"></script>
+<script src="http://localhost/sachcuhue/js/bootstrap.min.js"></script>
  <script src="http://localhost/sachcuhue/js/gotop.js"></script>
  <script src="http://localhost/sachcuhue/js/validador.js"></script>
-    <script language="javascript" src="http://localhost/sachcuhue/js/jquery-3.1.1.min.js" ></script>
-        <script language="javascript" src="http://localhost/sachcuhue/js/ajax_loadingpost.js" ></script>
+<script language="javascript" src="http://localhost/sachcuhue/js/jquery-3.1.1.min.js" ></script>
+<script language="javascript" src="http://localhost/sachcuhue/js/ajax_loadingpost.js" ></script>
 
 <style>
 a {

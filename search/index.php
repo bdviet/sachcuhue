@@ -98,7 +98,7 @@ function adddotstring($keywordNum) {
 }
 
 $kt=0;
-if ($address=='TP.HCM')
+if ($address=='ĐH Kinh Te')
 while($data = mysqli_fetch_array($result))
    {  
     $price=adddotstring($data['price']);  

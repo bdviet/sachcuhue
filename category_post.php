@@ -73,8 +73,8 @@
                     </span>  
                     </a>
 
-                    <a href="http://localhost/sachcuhue/filter?category=Đề thi / Đề cương" class="list-group-item"><span class="glyphicon glyphicon-piggy-bank"></span> Đề thi / Đề cương  
-                     <span class = "badge pull-right">   <?php  include('connect.php'); $sql = "SELECT count(id) as total from postads where category='Đề thi / Đề cương' ";    $result = mysqli_query($conn, $sql);    $data = mysqli_fetch_array($result);echo $data['total'];$conn->close();?> 
+                    <a href="http://localhost/sachcuhue/filter?category=Đề thi/Đề cương" class="list-group-item"><span class="glyphicon glyphicon-piggy-bank"></span>Đề thi/Đề cương  
+                     <span class = "badge pull-right">   <?php  include('connect.php'); $sql = "SELECT count(id) as total from postads where category='Đề thi/Đề cương' ";    $result = mysqli_query($conn, $sql);    $data = mysqli_fetch_array($result);echo $data['total'];$conn->close();?> 
                     </span>  
                     </a>
                 </div>
@@ -102,7 +102,7 @@
                     </a>
 
 
-                    <a hhref="http://localhost/sachcuhue/filter?category=Sách thiếu nhi" class="list-group-item"><span class="glyphicon glyphicon-home"></span> Sách thiếu nhi
+                    <a href="http://localhost/sachcuhue/filter?category=Sách thiếu nhi" class="list-group-item"><span class="glyphicon glyphicon-home"></span> Sách thiếu nhi
                      <span class = "badge pull-right">   <?php  include('connect.php'); $sql = "SELECT count(id) as total from postads where category='Sách thiếu nhi' ";    $result = mysqli_query($conn, $sql);    $data = mysqli_fetch_array($result);echo $data['total'];$conn->close();?> 
                     </span>  
                     </a>
@@ -145,8 +145,8 @@
                     </span>  
                     </a>
 
-                    <a href="http://localhost/sachcuhue/filter?category=Đề thi / Đề cương" class="list-group-item"><span class="glyphicon glyphicon-piggy-bank"></span> Đề thi / Đề cương  
-                     <span class = "badge pull-right">   <?php  include('connect.php'); $sql = "SELECT count(id) as total from postads where category='Đề thi / Đề cương' ";    $result = mysqli_query($conn, $sql);    $data = mysqli_fetch_array($result);echo $data['total'];$conn->close();?> 
+                    <a href="http://localhost/sachcuhue/filter?category=Đề thi/Đề cương" class="list-group-item"><span class="glyphicon glyphicon-piggy-bank"></span> Đề thi/Đề cương  
+                     <span class = "badge pull-right">   <?php  include('connect.php'); $sql = "SELECT count(id) as total from postads where category='Đề thi/Đề cương' ";    $result = mysqli_query($conn, $sql);    $data = mysqli_fetch_array($result);echo $data['total'];$conn->close();?> 
                     </span>  
                     </a>
                 

@@ -10,7 +10,7 @@ $password           = isset($_POST['password']) ? $_POST['password'] : false;
 $passwordnew        = isset($_POST['passwordnew']) ? $_POST['passwordnew'] : false;
 
 $id_member=$_SESSION['id_member'];
-$conn = mysqli_connect('localhost', 'root', '', 'chosinhvien') or die ('{error:"bad_request"}');
+$conn = mysqli_connect('localhost', 'root', '', 'sachcuhue') or die ('{error:"bad_request"}');
 mysqli_query($conn,"SET NAMES 'UTF8'");
 // Khai báo biến lưu lỗi
 $error = array(
