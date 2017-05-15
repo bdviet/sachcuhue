@@ -2,12 +2,8 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<head>
-<meta charset="utf-8">
-</head>
 <html lang="en">
-<title>Sách cũ Huế | Cập nhật thông tin bài đăng</title>
-
+<title>Sách cũ Huế | Cập nhật thông tin</title>
 <?php
 include('../header.php');
 ?>
@@ -180,46 +176,39 @@ echo "
 <div id='success'></div>
 ";
 ?>
-  
+
      <script language="javascript">
         $('#change').submit(function () {
             // Xóa trắng thẻ div show lỗi
             $('#showerror').html('');          
-            // var title = $('#title').val();
-            // var content = $('#content').val();  
-            // var price = $('#price').val();  
-            // var contact = $('#contact').val();  
-            // var category = $('#category').val();
-            // var address = $('#address').val();
+            var title = $('#title').val();
+            var content = $('#content').val();  
+            var price = $('#price').val();  
+            var contact = $('#contact').val();  
+            var category = $('#category').val();
+            var address = $('#address').val();
             //kiem tra xem nhap du thong tin chua
-            var currentLocation = window.location.href;
-            var id = getParameterByName("id", currentLocation);
-            $.ajax({
-                url : '/sachcuhue/admin/uppost.php?id='+id,
-                type : 'post',
-                dataType : 'json',
-                data : $(this).serialize(),
-                success : function (result) {
-                    $('#edit').html('');
-                    $('#success').append("<div id='fade'><div class='alert alert-success col-md-12'> <span class='glyphicon glyphicon-ok'></span> Cập nhật thành công.</div></div>");
-                },
-                error: function(err){
-                  console.log("error");
-                  console.log(err);
-                }
-            });
-            return false;
+            
+                $.ajax({
+                    url : 'uppost.php',
+                    type : 'post',
+                    dataType : 'json',
+                    data : {
+                        title : title,
+                        content : content,
+                        contact : contact,
+                        category : category,
+                        price  : price,
+                        address  : address
+                    },
+                    success : function (result) {
+                        
+                        $('#edit').html('');
+                        $('#success').append("<div id='fade'><div class='alert alert-success col-md-12'> <span class='glyphicon glyphicon-ok'></span> Cập nhật thành công.</div></div>");
+                    }
+                });
+                    
         });
-
-        function getParameterByName(name, url) {
-          if (!url) url = window.location.href;
-          name = name.replace(/[\[\]]/g, "\\$&");
-          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-              results = regex.exec(url);
-          if (!results) return null;
-          if (!results[2]) return '';
-          return decodeURIComponent(results[2].replace(/\+/g, " "));
-        }
     </script>  
            
 
@@ -245,3 +234,36 @@ include('../footer.php');
 </body>
 
 </html>
+
+
+
+=======================================
+
+
+<?php
+session_start();
+?>
+<?php
+if (isset($_POST['submit'])){
+$title          = isset($_POST['title']) ? $_POST['title'] : false;
+$content        = isset($_POST['content']) ? $_POST['content'] : false;
+$price          = isset($_POST['price']) ? $_POST['price'] : false;
+$contact        = isset($_POST['contact']) ? $_POST['contact'] : false;
+$category       = isset($_POST['category']) ? $_POST['category'] : false;
+$address        = isset($_POST['address']) ? $_POST['address'] : false;
+$idpost=$_GET['id'];
+}
+$conn = mysqli_connect('localhost', 'root', '', 'sachcuhue') or die ('{error:"bad_request"}');
+
+// Khai báo biến lưu lỗi
+$error = array(
+    'error' => 'success'
+);
+$sql = "UPDATE postads SET title='$title', content='$content', price='$price', contact='$contact', category='$category', address='$address' WHERE id='$id_post'";
+
+$conn->query($sql);
+mysqli_query($conn,"SET NAMES 'UTF8'");
+// Trả kết quả về cho client
+die (json_encode($error));
+
+?>
