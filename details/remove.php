@@ -52,6 +52,7 @@ include('../category_post.php');
     if ($data['id_member'] == $id_member||$id_member=='12') //12: id của admin
     {   
         $sql = "DELETE FROM postads WHERE id = $id";
+        echo "string";
         $conn->query($sql);
          echo "<div class='alert alert-success'> <span class='glyphicon glyphicon-ok'></span> Đã xóa thành công bài viết của bạn</div>  ";
     include('../footer.php');
